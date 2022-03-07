@@ -1,0 +1,144 @@
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  min-height: 100vh;
+  line-height: 1;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  color: #ce9797;
+}
+
+.page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+.page__image {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 400px;
+  height: 100%;
+  background-image: url(hero-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.page__text {
+  width: 830px;
+  background-image: url(bg-pattern-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-left: 165px;
+  padding-top: 65px;
+}
+
+.page__text__logo {
+  margin-bottom: 135px;
+}
+
+.page__text h1 {
+  font-weight: 300;
+  font-size: 60px;
+  margin-right: 280px;
+  text-transform: uppercase;
+  letter-spacing: 15px;
+  margin-bottom: 30px;
+}
+
+.page__text h1 strong {
+  color: #413a3a;
+  font-weight: 600;
+}
+
+.page__text__description {
+  line-height: 1.4;
+  margin-right: 225px;
+  margin-bottom: 47px;
+}
+
+.page__text__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.page__text__form input {
+  height: 56px;
+  border-radius: 26px;
+  border: solid 1px #ce9797;
+  width: 446px;
+  padding-left: 10px;
+  color: #ce9797;
+}
+
+.page__text__form input:focus {
+  outline: none;
+  border: solid 2px #f96262;
+  color: black;
+}
+
+.page__text__form .error_icon {
+  position: relative;
+  left: -100px;
+  z-index: 1;
+  background-image: url(icon-error.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-height: 24px;
+  min-width: 24px;
+}
+
+.page__text__form .button {
+  position: relative;
+  background: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+  height: 56px;
+  width: 101px;
+  border-radius: 27px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  left: -91px;
+}
+
+.page__text__form .button__arrow {
+  background-image: url(/icon-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 20px;
+  width: 15px;
+}
+
+.page__text__form .button:hover {
+  cursor: pointer;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.5), rgba(255, 245, 245, 0.5)), linear-gradient(135deg, #f8bfbf, #ee8c8c);
+}
+/*# sourceMappingURL=style.css.map */
