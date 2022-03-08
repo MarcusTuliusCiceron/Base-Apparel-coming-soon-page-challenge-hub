@@ -29,6 +29,18 @@ body {
   width: 100%;
 }
 
+@media (max-width: 63.9375em) {
+  .page {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    background-color: #fefaf9;
+    position: relative;
+    width: auto;
+  }
+}
+
 .page__image {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -40,6 +52,14 @@ body {
   background-size: cover;
 }
 
+@media (max-width: 63.9375em) {
+  .page__image {
+    margin-top: 85px;
+    width: 100%;
+    height: 250px;
+  }
+}
+
 .page__text {
   width: 830px;
   background-image: url(bg-pattern-desktop.svg);
@@ -49,8 +69,26 @@ body {
   padding-top: 65px;
 }
 
+@media (max-width: 63.9375em) {
+  .page__text {
+    width: auto;
+    background-image: none;
+    padding: 35px;
+    text-align: center;
+    padding-top: 50px;
+  }
+}
+
 .page__text__logo {
   margin-bottom: 135px;
+}
+
+@media (max-width: 63.9375em) {
+  .page__text__logo {
+    position: absolute;
+    top: 30px;
+    left: 35px;
+  }
 }
 
 .page__text h1 {
@@ -60,6 +98,14 @@ body {
   text-transform: uppercase;
   letter-spacing: 15px;
   margin-bottom: 30px;
+}
+
+@media (max-width: 63.9375em) {
+  .page__text h1 {
+    margin: 0;
+    font-size: 40px;
+    margin-bottom: 25px;
+  }
 }
 
 .page__text h1 strong {
@@ -73,6 +119,14 @@ body {
   margin-bottom: 47px;
 }
 
+@media (max-width: 63.9375em) {
+  .page__text__description {
+    margin: 0;
+    font-size: 14px;
+    margin-bottom: 25px;
+  }
+}
+
 .page__text__form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -81,6 +135,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  margin-bottom: 5px;
 }
 
 .page__text__form input {
@@ -90,6 +145,14 @@ body {
   width: 446px;
   padding-left: 10px;
   color: #ce9797;
+  display: block;
+}
+
+@media (max-width: 63.9375em) {
+  .page__text__form input {
+    width: 100%;
+    margin: auto;
+  }
 }
 
 .page__text__form input:focus {
@@ -111,6 +174,15 @@ body {
   visibility: hidden;
 }
 
+@media (max-width: 63.9375em) {
+  .page__text__form .error_icon {
+    position: absolute;
+    left: 100%;
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+}
+
 .page__text__form .button {
   position: relative;
   background: linear-gradient(135deg, #f8bfbf, #ee8c8c);
@@ -128,6 +200,16 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   left: -91px;
+}
+
+@media (max-width: 63.9375em) {
+  .page__text__form .button {
+    position: absolute;
+    left: 100%;
+    width: 65px;
+    -webkit-transform: translateX(-60px);
+            transform: translateX(-60px);
+  }
 }
 
 .page__text__form .button__arrow {
