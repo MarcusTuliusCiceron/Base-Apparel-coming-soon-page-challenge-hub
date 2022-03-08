@@ -143,10 +143,30 @@ body {
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.5), rgba(255, 245, 245, 0.5)), linear-gradient(135deg, #f8bfbf, #ee8c8c);
 }
 
+.page__text .validation_message {
+  visibility: hidden;
+}
+
+.page__text .visible {
+  visibility: visible;
+}
+
 .animation {
   -webkit-transition: all 500ms ease-in-out;
   transition: all 500ms ease-in-out;
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
+}
+
+.visible {
+  visibility: visible;
+}
+
+.valid {
+  color: green;
+}
+
+.invalid {
+  color: red;
 }
 /*# sourceMappingURL=style.css.map */

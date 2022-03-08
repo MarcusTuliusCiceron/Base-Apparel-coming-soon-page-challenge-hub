@@ -122,9 +122,26 @@ body{
                 }
             }
         }
+        .validation_message{
+            visibility: hidden;
+        }
+        .visible{
+            visibility: visible;
+        }
     }
 }
 .animation{
     transition: all 500ms ease-in-out;
     transform: rotate(360deg);
+}
+
+.visible{
+    visibility: visible;
+}
+
+.valid{
+    color: green;
+}
+.invalid{
+    color: red;
 }
