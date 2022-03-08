@@ -95,6 +95,7 @@ body{
                 background-repeat: no-repeat;
                 min-height: 24px;
                 min-width: 24px;
+                visibility: hidden;
                 
             }
             .button{
@@ -122,4 +123,8 @@ body{
             }
         }
     }
+}
+.animation{
+    transition: all 500ms ease-in-out;
+    transform: rotate(360deg);
 }
